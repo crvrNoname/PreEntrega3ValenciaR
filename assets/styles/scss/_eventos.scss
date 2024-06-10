@@ -1,0 +1,35 @@
+
+/* EVENTOS CSS */
+
+table {
+    border-collapse: collapse;
+    background: $clr-verde-3;
+    color: $clr-blanco2;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  
+  th, td {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid $clr-verde-2;
+  }
+  
+  th {
+    background: $clr-verde-1;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: $clr-verde1;
+  }
+  
+  caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    color: $clr-negro;
+  }
+  

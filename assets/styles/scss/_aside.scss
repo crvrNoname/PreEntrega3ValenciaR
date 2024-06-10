@@ -1,0 +1,12 @@
+
+aside {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    grid-area: aside;
+  
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }

@@ -1,0 +1,54 @@
+
+/* GALERIA CSS */
+
+article {
+    background-color: $clr-verde1;
+    border-radius: 1rem;
+  }
+  
+  .contenedorFotos {
+    width: 100%;
+  }
+  
+  article {
+    h3 {
+      color: $clr-blanco2;
+      text-align: end;
+      padding: 1rem;
+    }
+  
+    > p {
+      padding: 1rem;
+      color: $clr-blanco2;
+      text-align: center;
+    }
+  }
+  
+  .foto {
+    max-width: 500px;
+    width: 100%;
+    height: 700px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: $clr-verde-3;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px $clr-verde-2;
+    display: inline-block;
+  
+    img {
+      width: 100%;
+      height: 50%;
+      border: solid 2px black;
+      border-radius: 1rem;
+      object-fit: cover;
+    }
+  }
+  
+  .resenhaFoto {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 1rem;
+  }
+  
+  

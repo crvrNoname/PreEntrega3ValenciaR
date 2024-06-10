@@ -1,0 +1,21 @@
+/*Footer*/
+footer {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    background-color: $clr-verde0;
+    grid-area: footer;
+  
+    a img {
+      width: 15px;
+      height: 15px;
+    }
+  
+    p {
+      color: $clr-blanco2;
+      font-family: salonDeBelleza;
+    }
+  }
+  

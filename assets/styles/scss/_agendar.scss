@@ -1,0 +1,55 @@
+/* AGENDAR CSS */
+
+#agendar-form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: $clr-verde-3;
+    border: 2px solid $clr-verde0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px $clr-verde-2;
+  
+    h3 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  
+    input {
+      &[type="text"], &[type="tel"], &[type="email"], &[type="date"], &[type="time"] {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid $clr-verde-2;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 1px;
+      }
+    }
+  
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid $clr-verde-2;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+  
+    input[type="submit"] {
+      font-size: 1.5rem;
+      border-radius: 5px;
+      padding: 2px;
+      margin: 5px;
+      background-color: $clr-blanco2;
+  
+      &:hover {
+        background-color: $clr-verde0;
+      }
+    }
+  }
+  
