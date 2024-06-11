@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*General*/
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +18,7 @@ body {
   bottom: 20px;
   right: 20px;
   z-index: 100;
+  -webkit-filter: drop-shadow(0px 0px 5px rgb(67, 152, 109));
 }
 
 @font-face {
@@ -30,74 +33,128 @@ body {
   src: url("./../../fonts/isocteurregular/isocteurregular.ttf") format("truetype");
   /* Ruta a tu fuente */
 }
+.color-verde-3 {
+  background-color: rgb(13, 67, 40);
+}
+
+.color-verde-2 {
+  background-color: rgb(26, 88, 56);
+}
+
+.color-verde-1 {
+  background-color: rgb(33, 98, 64);
+}
+
+.color-verde0 {
+  background-color: rgb(40, 109, 73);
+}
+
+.color-verde1 {
+  background-color: rgb(47, 120, 82);
+}
+
+.color-verde2 {
+  background-color: rgb(54, 131, 91);
+}
+
+.color-verde3 {
+  background-color: rgb(67, 152, 109);
+}
+
+.color-blanco {
+  background-color: #f1f5f9;
+}
+
+.color-blanco2 {
+  background-color: rgb(240, 240, 240);
+}
+
+.color-negro {
+  background-color: rgb(20, 20, 20);
+}
+
 header {
-  max-width: 100vw;
-  height: auto;
-  padding: 5px;
-  margin: 0px;
+  height: 8rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   grid-area: header;
 }
-header > img {
-  width: 10vw;
-  height: auto;
-  aspect-ratio: 1/1;
-  object-fit: contain;
-  padding-bottom: 15px;
-  margin-bottom: 0px;
-}
-
-.logoContenedor {
+header .search-banner {
+  background-color: rgb(67, 152, 109);
+  /* Color de fondo del banner */
+  padding: 0.3rem;
+  border-radius: 25px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-
-#logo {
-  width: 25vw;
-  height: 100%;
-  max-height: 150px;
+header .search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(40, 109, 73);
+  /* Borde del contenedor de búsqueda */
+  border-radius: 50px;
+  background-color: #f1f5f9;
+  padding: 5px;
+}
+header .search-icon {
+  width: 100%;
+  max-width: 1.5rem;
+  margin-right: 10px;
+}
+header .search-input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 1rem;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 7rem;
+  /* Para que el input ocupe el espacio restante */
+}
+header .search-input::placeholder {
+  color: #6c757d;
+}
+header #logo {
+  width: 100%;
+  max-width: 7rem;
   /* Box Modeling */
   margin: 0 auto;
   padding: 0px;
   display: block;
 }
-
-#titulo {
-  max-width: auto;
-  width: 100%;
-  height: 15vh;
+header #titulo {
+  width: fit-content;
+  height: 8rem;
   text-align: center;
   padding-bottom: 0px;
   margin: 0 auto;
-  margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-h1 {
+header #titulo h1 {
   font-family: andresValencia;
   line-height: 1;
   font-weight: 10;
-  font-size: 4.5vh;
+  font-size: clamp(45px, 6vw, 100px);
   /* letter-spacing: -2px; */
   /* Box Model */
   padding: 0px;
   margin: 0px;
 }
-
-h2 {
-  height: 4vh;
+header #titulo h2 {
+  height: calmp(1.5rem, 2.5rem, 3.5rem);
   width: 100%;
+  max-width: calmp(25rem, 35rem, 40rem);
   font-family: salonDeBelleza;
   line-height: 1;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: clamp(25px, 4vw, 50px);
   color: #f1f5f9;
   background-color: rgb(40, 109, 73);
   /* Box Model */
@@ -118,7 +175,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
+  flex-direction: row;
   white-space: nowrap;
   height: auto;
   width: 100%;
@@ -148,7 +205,8 @@ ul li a {
 
 aside {
   width: auto;
-  height: auto;
+  height: 100%;
+  max-height: 50vh;
   margin: 5px;
   grid-area: aside;
 }
@@ -174,11 +232,20 @@ article {
   display: inline-block;
 }
 
+main article .fotoPerfil {
+  max-width: 10rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  box-shadow: 15px 20px 40px rgb(20, 20, 20);
+}
+
 main article img {
   max-width: 200px;
   width: 100%;
-  height: 100px;
+  height: auto;
   padding: 0px;
+  border-radius: 50px;
   border: 2px solid rgb(33, 98, 64);
   margin: 5px;
   left: 2px;
@@ -187,15 +254,53 @@ main article img {
 }
 
 article p {
-  padding: 5px;
-  text-align: left;
-  display: inline;
   font-family: salonDeBelleza;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+#bienvenida {
+  display: flex;
+}
+
+.bienvenida {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f1f5f9;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.seccion-titulo {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #f1f5f9;
+  /* Color rojo para los títulos de las secciones */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff4136;
+  /* Línea debajo de los títulos */
+  padding-bottom: 5px;
+}
+.seccion-titulo + p {
+  margin-top: 10px;
+}
+
+p + .seccion-titulo {
+  margin-top: 30px;
+}
+
+.fotosInicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*Footer*/
 footer {
-  width: auto;
   height: auto;
   padding: 5px;
   margin: 0px;
@@ -204,8 +309,9 @@ footer {
   grid-area: footer;
 }
 footer a img {
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-filter: drop-shadow(0px 0px 1px #f1f5f9);
 }
 footer p {
   color: rgb(240, 240, 240);
@@ -374,27 +480,60 @@ caption {
   .contenedor {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 20vh auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "header" "nav" "aside" "main" "footer";
   }
-  #titulo {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  header #titulo {
     display: none;
+  }
+  header #logo {
+    margin: 0px;
   }
   aside {
     display: flex;
     flex-direction: row;
-    width: 100vw;
-  }
-  aside .aviso {
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    max-width: 100vw;
   }
   aside .carousel {
-    width: 70%;
-    height: 100%;
+    width: 30%;
+    height: 30%;
+    border: solid 2px blue;
+    width: 100%;
+    max-width: 25rem;
+  }
+  aside .asideimg {
+    width: 100%;
+    max-width: 7rem;
+    background-color: red;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+  aside .sale {
+    width: 30%;
+    height: auto;
   }
   main {
     width: 100vw;
+  }
+  main article {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  main article .fotoPerfil {
+    margin: 0 auto;
+    width: 100%;
+  }
+  main #bienvenida {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (min-width: 769px) {

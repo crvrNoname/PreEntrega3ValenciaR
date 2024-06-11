@@ -24,19 +24,28 @@
     <div class="contenedor">
 
         <header>
-            <img id="reloj" src="./assets/img/generales/reloj-removebg.png" alt="Reloj hora Santiago de Chile.">
-            <div class="logoContenedor">
+            <!-- <img id="reloj" src="./assets/img/generales/reloj-removebg.png" alt="Reloj hora Santiago de Chile."> -->
+            <!-- <div class="logoContenedor"> -->
                 
                 <img id="logo" src="./assets/img/logos/avsb.png" alt="Logo Andres Valencia SB"
                 title="Logo Andres Valencia SB">
                 
-                <div id="titulo">
-                    <h1>Andres Valencia</h1>
-                    <h2>Salon de Belleza</h2>
-                </div>
+                
+            <!-- </div> -->
+            <div id="titulo">
+                <h1>Andres Valencia</h1>
+                <h2>Salon de Belleza</h2>
             </div>
             
-            <img id="buscador" src="./assets/img/generales/lupa-removebg.png" alt="buscador dentro del sitio web.">
+            <!-- <img id="buscador" src="./assets/img/generales/lupa-removebg.png" alt="buscador dentro del sitio web.">
+              -->
+
+              <div class="search-banner">
+                <div class="search-container">
+                    <img src="./assets/img/generales/lupa-removebg.png" alt="Buscar" class="search-icon">
+                    <input type="text" class="search-input" placeholder="Buscar...">
+                </div>
+            </div>
             
         </header>
 
@@ -78,21 +87,83 @@
 
       
        <aside>
-        <img class="aviso" src="./assets/img/logos/fb.png" alt="Publicidad_1">
-        <img class="carousel"  src="./assets/img/logos/insta.png" alt="Publicidad_2">
+        <!-- <img class="aviso" src="./assets/img/logos/fb.png" alt="Publicidad_1">-->
+        
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/baner/alterEgo.png" class="d-block w-100 asideimg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/baner/wella.png" class="d-block w-100 asideimg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/baner/pichara.png" class="d-block w-100 asideimg" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <img class="asideimg"  src="./assets/img/baner/saleOff-removebg.png" alt="Descuento"> 
     </aside>
         <main>
             
 
             <article>
-                <img src="./assets/img/logos/logowhatsappsinfondo.png" alt="fotoPortada">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur obcaecati rem incidunt maiores, dolorem
-                    ut ex atque consequatur dignissimos nobis similique amet deleniti? Eum facilis voluptates earum itaque
-                    animi repellendus.</p>
-                <section>
-                    <img src="" alt="foto1">
-                    <img src="" alt="foto2">
-                    <img src="" alt="foto3">
+                <div id="bienvenida">
+
+                    <img class="fotoPerfil" src="./assets/img/inicio/andresValenciaPerfil.webp" alt="fotoPortada">
+                
+                <p class="bienvenida"><strong>Bienvenidos a Andres Valencia Salón de Belleza: Tu Salón de Belleza, Peluquería y Barbería de Confianza</strong></p>
+                </div>
+
+    <p>En el Salón de Belleza de Andres Valencia, pensamos que cada individuo tiene una expresión única de belleza. En nuestra peluquería, hemos creado un ambiente exclusivo para brindar a nuestros clientes una experiencia única de cuidado personal. Aquí encontrarás la relajación que necesitas mientras disfrutas de servicios hechos especialmente para realzar tu estilo y personalidad.</p>
+
+    <p class="seccion-titulo"><strong>Servicios de Belleza</strong></p>
+
+    <p>Nuestro equipo de profesionales en el campo de la estética tiene como objetivo principal ayudarte a que te veas y sientas mejor que nunca. Tenemos una variedad extensa de servicios disponibles, que incluyen tratamientos faciales para rejuvenecer la piel y también manicuras y pedicuras impecables. Para garantizar resultados duraderos y satisfacer tus necesidades de cuidado para la piel y las uñas, nos aseguramos de utilizar productos de alta calidad.</p>
+
+    <p class="seccion-titulo"><strong>Peluquería</strong></p>
+
+    <p>La peluquería es el centro neurálgico de Andres Valencia Salón de Belleza. Contamos con estilistas profesionales altamente capacitados en las últimas tendencias y técnicas de corte de cabello moderno y elegante, los cuales podrán personalizar tu look para que se ajuste perfectamente a tu estilo de vida. Si estás interesado en hacer un cambio drástico o simplemente mantener tu apariencia, estamos disponibles para ayudarte a encontrar el estilo ideal. Aparte de eso, tenemos disponibles servicios de coloración, reflejos y tratamientos para cuidar tu cabello y mantenerlo sano y brillante.</p>
+
+    <p class="seccion-titulo"><strong>Barbería</strong></p>
+
+    <p>En nuestra barbería, brindamos un espacio acogedor para nuestros distinguidos clientes hombres. Aquí podrán deleitarse con cortes de pelo tanto clásicos como modernos y disfrutar de la experiencia única de afeitados tradicionales realizados con navaja. Nuestros barberos altamente capacitados mezclan técnicas clásicas con un estilo moderno para brindarte un servicio excepcional que te hará lucir impecable. Estamos comprometidos en brindar una experiencia de calidad, ya sea que necesites un corte de pelo impecable o atención minuciosa para tu barba.</p>
+
+    <p class="seccion-titulo"><strong>Atención Personalizada</strong></p>
+
+    <p>En el Salón de Belleza de Andres Valencia, cada cliente es tratado como único y especial. Dedicamos tiempo a escuchar tus necesidades y deseos para garantizar que cada visita sea una experiencia satisfactoria. En nuestro ambiente cálido y tranquilo podrás relajarte y alejarte del estrés diario mientras nos encargamos de atender a tu belleza y bienestar.</p>
+
+    <p class="seccion-titulo"><strong>Productos de Calidad</strong></p>
+
+    <p>Garantizamos la salud y el cuidado óptimo de tu cabello y piel al utilizar exclusivamente productos de las marcas más destacadas en el mercado. También, nos aseguramos de que nuestros profesionales se mantengan actualizados constantemente para brindarte las últimas técnicas y tendencias innovadoras del sector.</p>
+
+    <p class="seccion-titulo"><strong>Visítanos</strong></p>
+
+    <p>Queremos invitarte a que visites el salón de belleza y barbería de Andres Valencia Salón. Ven y descubre personalmente los motivos por los cuales somos la elección preferida de tantas personas para sus necesidades de belleza. Queremos transmitirte seguridad, belleza y renovación desde el momento en que cruzas nuestras puertas hasta mucho después de tu partida.</p>
+
+    <p>Estamos ansiosos por verte muy pronto y asistirte en el descubrimiento de tu potencial máximo.</p>
+
+
+
+
+                <section class="fotosInicio">
+                    <img src="./assets/img/inicio/peinadoAVSB.webp" alt="Peinado" title="Peinado">
+                    <img src="./assets/img/inicio/colorAVSB.webp" alt="Color" title="Color">
+                    <img src="./assets/img/inicio/nailsAVSB.webp" alt="Nails" title="Nails">
                 </section>
             </article>
           
@@ -103,15 +174,17 @@
     <footer>
         <p>
             Síguenos en:
-            <a href="#" target="_blank"><img src="./assets/img/logos/logofbsinfondo.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="./assets/img/logos/fb.png" alt="Facebook"></a>
 
-            <a href="#" target="_blank"><img src="./assets/img/logos/logoinstasinfondo.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="./assets/img/logos/insta.png" alt="Instagram"></a>
         </p>
         <p>Teléfono: 123-456-789</p>
         <p>andresvalenciasb@miempresa.com</p>
-
+<hr>
         <p>&copy; 2024 Andres Valencia SB</p>
     </footer>
+
+    
     </div>
    
 

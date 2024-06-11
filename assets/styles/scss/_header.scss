@@ -1,36 +1,104 @@
 
+
+.color-verde-3 { background-color: $clr-verde-3; }
+.color-verde-2 { background-color: $clr-verde-2; }
+.color-verde-1 { background-color: $clr-verde-1; }
+.color-verde0 { background-color: $clr-verde0; }
+.color-verde1 { background-color: $clr-verde1; }
+.color-verde2 { background-color: $clr-verde2; }
+.color-verde3 { background-color: $clr-verde3; }
+.color-blanco { background-color: $clr-blanco; }
+.color-blanco2 { background-color: $clr-blanco2; }
+.color-negro { background-color: $clr-negro; }
+
+
 header {
-    max-width: 100vw;
-    height: auto;
-    padding: 5px;
-    margin: 0px;
+    // max-width: 100vw;
+    height: 8rem;
+    padding: 1rem;
+    // margin: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     grid-area: header;
   
-    > img {
-      width: 10vw;
-      height: auto;
-      aspect-ratio: 1/1;
-      object-fit: contain;
-      padding-bottom: 15px;
-      margin-bottom: 0px;
-    }
-  }
+    // > img {
+    //   // width: 10vw;
+    //   width: 100%;
+    //   max-width: 4rem;
+    //   height: auto;
+    //   aspect-ratio: 1/1;
+    //   object-fit: contain;
+    //   padding-bottom: 15px;
+    //   margin-bottom: 0px;
+    // }
 
-  .logoContenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
+    //Buscador
+    .search-banner {
+      background-color: $clr-verde3;
+    
+      /* Color de fondo del banner */
+      padding: 0.3rem;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .search-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid $clr-verde0;
+    
+      /* Borde del contenedor de búsqueda */
+      border-radius: 50px;
+      background-color: $clr-blanco;
+      padding: 5px;
+    }
+    
+    .search-icon {
+      width: 100%;
+      max-width: 1.5rem;
+      margin-right: 10px;
+    
+      
+    }
+    
+    .search-input {
+      border: none;
+      outline: none;
+      padding: 5px;
+      border-radius: 25px;
+      font-size: 1rem;
+      flex-grow: 1;
+      width: 100%;
+      max-width: 7rem;
+      // max-width: 10rem;
+    
+      /* Para que el input ocupe el espacio restante */
+    
+      &::placeholder {
+        color: #6c757d;
+    
+        
+      }
+    }
+    
+    
+  // .logoContenedor {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-around;
+  //   align-items: center;
+  // }
   
   #logo {
-    width: clamp(20vw, 25vw, 60vw);
-    height: 100%;
-    max-height: 150px;
+    // width: clamp(20vw, 25vw, 60vw);
+    // height: 100%;
+    // max-height: 150px;
+    width: 100%;
+    max-width: 7rem;
   
     /* Box Modeling */
     margin: 0 auto;
@@ -39,48 +107,56 @@ header {
   }
   
   #titulo {
-    max-width: auto;
-    width: 100%;
-    height: 15vh;
+    // max-width: auto;
+    width: fit-content;
+    height: 8rem;
     text-align: center;
     padding-bottom: 0px;
     margin: 0 auto;
-    margin-left: 10px;
+    // margin-left: 10px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    h1 {
+      font-family: andresValencia;
+      line-height: 1;
+      font-weight: 10;
+      // font-size: 3rem;
+      font-size: clamp(45px, 6vw, 100px);
+    
+      /* letter-spacing: -2px; */
+    
+      /* Box Model */
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    h2 {
+      height: calmp(1.5rem,2.5rem,3.5rem);
+      width: 100%;
+      max-width: calmp(25rem,35rem,40rem);
+      font-family: salonDeBelleza;
+      line-height: 1;
+      font-weight: 400;
+      // font-size: 2rem;
+      font-size: clamp(25px, 4vw, 50px);
+      color: $clr-blanco;
+      background-color: $clr-verde0;
+    
+      /* Box Model */
+      padding: 0px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   
-  h1 {
-    font-family: andresValencia;
-    line-height: 1;
-    font-weight: 10;
-    font-size: 4.5vh;
   
-    /* letter-spacing: -2px; */
-  
-    /* Box Model */
-    padding: 0px;
-    margin: 0px;
   }
-  
-  h2 {
-    height: 4vh;
-    width: 100%;
-    font-family: salonDeBelleza;
-    line-height: 1;
-    font-weight: 400;
-    font-size: 3vh;
-    color: $clr-blanco;
-    background-color: $clr-verde0;
-  
-    /* Box Model */
-    padding: 0px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
 
   #navbar {
     /* margin: 0 auto;
@@ -93,7 +169,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     white-space: nowrap;
     height: auto;
     width: 100%;
