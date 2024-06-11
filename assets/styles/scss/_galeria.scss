@@ -8,6 +8,11 @@ article {
   
   .contenedorFotos {
     width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   
   article {
@@ -25,18 +30,23 @@ article {
   }
   
   .foto {
-    max-width: 500px;
+    max-width: 70vw;
     width: 100%;
-    height: 700px;
+    height: auto;
     margin: 1rem;
     padding: 1rem;
     background-color: $clr-verde-3;
     border-radius: 1rem;
-    box-shadow: 4px 4px 4px $clr-verde-2;
-    display: inline-block;
+    box-shadow: 4px 4px 4px $clr-verde-2;   
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
   
     img {
+    
       width: 100%;
+      max-width: 10rem;
       height: 50%;
       border: solid 2px black;
       border-radius: 1rem;
@@ -49,6 +59,7 @@ article {
     display: inline-block;
     vertical-align: top;
     padding-top: 1rem;
+    font-size: 1em;
   }
   
   

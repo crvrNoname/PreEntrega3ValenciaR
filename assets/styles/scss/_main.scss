@@ -19,7 +19,6 @@ main {
     
     max-width: 10rem;
     width: 100%;
-    // height: 5rem;
     object-fit: cover;
     border-radius: inherit;
     box-shadow: 15px 20px 40px $clr-negro;
@@ -67,12 +66,12 @@ main {
     font-weight: bold;
     color: $clr-blanco;
   
-    /* Color rojo para los títulos de las secciones */
+    
     margin-top: 20px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #ff4136;
+    border-bottom: 2px solid $clr-rojo;
   
-    /* Línea debajo de los títulos */
+    
     padding-bottom: 5px;
   
     + p {

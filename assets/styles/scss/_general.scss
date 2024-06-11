@@ -25,3 +25,22 @@
   -webkit-filter: drop-shadow(0px 0px 5px $clr-verde3);
 
 }
+
+/* Efecto de pulso */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.pulse {
+
+  animation: pulse 1s infinite;
+  transition: transform 0.3s;
+}
