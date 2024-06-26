@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0;
   font-size: 1.1em;
+  border: 2px solid blue;
 }
 
 body {
@@ -58,6 +59,7 @@ header {
 header .search-banner {
   background-color: rgb(67, 152, 109);
   padding: 0.3rem;
+  margin-left: 40vw;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -199,6 +201,7 @@ main {
 
 article {
   width: 80vw;
+  min-width: 430px;
   height: auto;
   margin: 0 auto;
   padding: 2vh;
@@ -274,7 +277,7 @@ p + .seccion-titulo {
 /*Footer*/
 footer {
   height: auto;
-  width: 99vw;
+  width: 98%;
   padding: 5px;
   margin: 0px;
   text-align: center;
