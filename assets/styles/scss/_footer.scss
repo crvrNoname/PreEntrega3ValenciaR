@@ -2,11 +2,15 @@
 footer {
    
     height: auto;
+    width: 99vw;
     padding: 5px;
     margin: 0px;
     text-align: center;
     background-color: $clr-verde0;
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   
     a img {
       width: 1.5rem;
@@ -17,6 +21,10 @@ footer {
     p {
       color: $clr-blanco2;
       font-family: salonDeBelleza;
+
+      width: fit-content;
+      text-align: center;
+
     }
   }
   

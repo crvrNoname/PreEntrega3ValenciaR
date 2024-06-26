@@ -1,17 +1,19 @@
 main {
-    width: auto;
+    width: 82.5vw;
     height: auto;
     display: flex;
     flex-direction: row;
     padding: 5px;
     margin: 0px;
     grid-area: main;
+    
   }
   
   article {
-    width: 70vw;
+    width: 80vw;
     height: auto;
     margin: 0 auto;
+    padding: 2vh;
     display: inline-block;
   }
   
@@ -31,6 +33,7 @@ main {
     padding: 0px;
     border-radius: 50px;
     border: 2px solid $clr-verde-1;
+    box-shadow: 15px 20px 40px $clr-negro;
     margin: 5px;
     left: 2px;
     display: inline-block;

@@ -1,8 +1,9 @@
 /*General*/
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-size: 1.1em;
+    // border: 2px solid blue;
     
     
   }
@@ -22,7 +23,7 @@
   bottom: 20px;
   right: 20px;
   z-index: 100;
-  -webkit-filter: drop-shadow(0px 0px 5px $clr-verde3);
+  -webkit-filter: drop-shadow(0px 0px 5px $clr-blanco2);
 
 }
 

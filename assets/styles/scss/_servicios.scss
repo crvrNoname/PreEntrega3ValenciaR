@@ -6,9 +6,10 @@
     margin: 0 auto;
     padding: 15px;
     background-color: $clr-verde-3;
-    border: 2px solid $clr-verde0;
-    border-radius: 5px;
+    border: 2px solid $clr-blanco2;
+    border-radius: 0.5rem;
     box-shadow: 2px 2px 4px $clr-verde-2;
+    color: $clr-blanco2;
   
     h3 {
       text-align: center;
@@ -31,6 +32,10 @@
   
     li {
       padding: 5px 0;
+
       font-size: 1rem;
+      background-color: $clr-verde1;
+      border-color: $clr-blanco2;
+      border-radius: 0.5rem;
     }
   }
