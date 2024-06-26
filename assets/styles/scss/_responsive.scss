@@ -20,7 +20,8 @@ header{
   display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin-left: 0;
     
   #titulo {
     
@@ -28,6 +29,14 @@ header{
     }
     #logo{
       margin: 0px;
+    }
+    .search-banner {
+     
+    
+     
+      
+     margin-left: 25vw;
+    
     }
 }
 
