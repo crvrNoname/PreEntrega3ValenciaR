@@ -1,41 +1,76 @@
-
-/* SERVICIOS CSS */
+/* SERVICIOS CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 #lista-precios {
-    width: 500px;
-    margin: 0 auto;
-    padding: 15px;
-    background-color: $clr-verde-3;
-    border: 2px solid $clr-blanco2;
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 4px $clr-verde-2;
-    color: $clr-blanco2;
-  
-    h3 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-  }
-  
-  .categoria-servicio {
-    margin-bottom: 30px;
-  
-    h4 {
-      margin-bottom: 10px;
-    }
-  
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    li {
-      padding: 5px 0;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: $clr-verde-3;
+  border: 2px solid $clr-blanco2;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px $clr-verde-2;
+  color: $clr-blanco2;
 
-      font-size: 1rem;
-      background-color: $clr-verde1;
-      border-color: $clr-blanco2;
-      border-radius: 0.5rem;
-    }
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    
   }
+}
+
+
+.categoria-servicio {
+  margin-bottom: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    margin-bottom: 10px;
+    font-family: andresValencia;
+  }
+
+  dl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .servicio {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 0px rgba(253, 251, 251, 0.2);
+  }
+
+  dt {
+    padding: 5px;
+    margin-left: 0px;
+    font-size: 1rem;
+    font-family: salonDeBelleza;
+  }
+
+  dd {
+    padding: 5px;
+    margin-right: 0px;
+    font-size: 1rem;
+    background-color: $clr-verde-1;
+    border-color: $clr-blanco2;
+    border-radius: 0.5rem;
+    font-family: salonDeBelleza;
+    box-shadow: 0px 0px 4px $clr-blanco;
+  }
+
+  .logoLista{
+    width: 100%;
+    max-width: 3.5rem;
+    background-color: none;
+    border: none;
+    box-shadow: unset;
+    -webkit-filter: drop-shadow(0px 0px 5px $clr-verde0);
+    margin: 10px auto;
+ 
+  
+  }
+}

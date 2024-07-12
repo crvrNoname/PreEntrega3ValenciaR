@@ -1,30 +1,26 @@
-/*Footer*/
+/*FOOTER CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 footer {
-   
-    height: auto;
-    width: 98%;
-    padding: 5px;
-    margin: 0px;
-    text-align: center;
-    background-color: $clr-verde0;
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    a img {
-      width: 1.5rem;
-      height: 1.5rem;
-      -webkit-filter: drop-shadow(0px 0px 1px $clr-blanco);
-    }
-  
-    p {
-      color: $clr-blanco2;
-      font-family: salonDeBelleza;
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  background-color: $clr-verde0;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-      width: fit-content;
-      text-align: center;
-
-    }
+  a img {
+    width: 1.5rem;
+    height: 1.5rem;
+    -webkit-filter: drop-shadow(0px 0px 1px $clr-blanco);
   }
-  
+
+  p {
+    color: $clr-blanco2;
+    font-family: salonDeBelleza;
+    width: fit-content;
+    text-align: center;
+  }
+}

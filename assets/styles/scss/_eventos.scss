@@ -1,35 +1,65 @@
-
-/* EVENTOS CSS */
+/*EVENTOS CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 table {
-    border-collapse: collapse;
-    background: $clr-verde-3;
-    color: $clr-blanco2;
-    width: 100%;
-    max-width: 650px;
-    margin: 0 auto;
-  }
+  border-collapse: collapse;
+  background: $clr-verde-3;
+  color: $clr-blanco2;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
   
-  th, td {
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid $clr-verde-2;
-  }
   
-  th {
-    background: $clr-verde-1;
-  }
+  font-size: 80%;
+  caption-side: top;
+
+  border-radius: 10px;
   
-  tbody tr:nth-child(even) {
-    background: $clr-verde1;
-  }
   
-  caption {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 15px 0;
-    color: $clr-negro;
-  }
   
+}
+
+.calendario {
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+
+  
+}
+
+th, td, tr {
+  font-weight: bold;
+  text-align: center;  
+  padding: 10px;  
+ }
+ th,td{
+  box-shadow: 0px 0px 3px $clr-blanco;
+  border-radius: 10px;
+ }
+
+th {
+  background: $clr-verde-1;  
+  
+}
+
+tbody tr:nth-child(even) {
+  background: $clr-verde1;
+}
+
+#calendario th:hover,
+#calendario td:hover {
+  box-shadow: 0 0 10px $clr-negro;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  margin: 5px;
+  border-radius: 10px;
+  border:2px solid $clr-verde-1;
+  color: $clr-negro;
+  background-color: $clr-blanco;
+}
+
+

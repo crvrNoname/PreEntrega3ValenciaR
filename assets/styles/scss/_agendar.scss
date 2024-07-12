@@ -1,57 +1,115 @@
-/* AGENDAR CSS */
-
-#agendar-form {
-    width: 400px;
+/*AGENDAR CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+   
+  .form {
+    width: fit-content;
+    height: auto;   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 50px auto;
-    padding: 25px;
-    background-color: $clr-verde-2;
-    border: 2px solid $clr-verde0;
-    border-radius: 10px;
+    border: 1px solid $clr-blanco;
     box-shadow: 4px 4px 4px $clr-verde-2;
+    padding: 25px;
+    background-color:  $clr-verde-2;
+    border-radius: 20px;
+    position:  absolute;
 
     color: $clr-blanco;
   
-    h3 {
-      text-align: center;
-      margin-bottom: 15px;
-    }
-  
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-  
-    input {
-      &[type="text"], &[type="tel"], &[type="email"], &[type="date"], &[type="time"] {
-        width: 100%;
-        padding: 10px;
-        border: 2px solid $clr-verde-2;
-        border-radius: 5px;
-        box-sizing: border-box;
-        margin-top: 1px;
-      }
-    }
-  
-    select {
-      width: 100%;
-      padding: 10px;
-      border: 2px solid $clr-verde-2;
-      border-radius: 5px;
-      box-sizing: border-box;
-      margin-top: 5px;
-    }
-  
-    input[type="submit"] {
+    h4 {
+      padding-bottom: 20px;
       font-size: 1.5rem;
-      border-radius: 5px;
-      padding: 2px;
-      margin: 5px;
-      background-color: $clr-blanco2;
-  
-      &:hover {
-        background-color: $clr-verde0;
-      }
+      font-weight: bold;
+      letter-spacing: .5px;
+      color: $clr-blanco;
+      font-family: andresValencia;
     }
+  }
+  
+  .contenedor-1 {
+    padding-top: 30px;
+    font-family: salonDeBelleza;
+  }
+  .group {
+    position: relative;
+  }
+
+  .main-input {
+    font-size: 1.3rem;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 50vw;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    background: $clr-blanco;
+    color: $clr-negro;
+    border-radius:  5px;
+    box-sizing: border-box;
+  
+    &:focus {
+      outline: none;
+      border-bottom-color:   #ff731c;
+    }
+  }
+  
+  .abajoYarribaNONE{
+    font-size: 1rem;
+      color: $clr-blanco;
+  }
+  
+  .abajoYarriba {
+    .lebal-email {
+      color: #999999;
+      font-size: 1.5rem;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: 10px;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+
+  .main-input {
+    &:focus ~ .lebal-email, &:valid ~ .lebal-email {
+      top: -30px;
+      font-size: 1rem;
+      color: $clr-blanco;
+    }
+  }
+}
+  
+  .highlight-span {
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+     opacity:  0 0.5;
+  }
+  
+  .main-input:focus ~ .highlight-span {
+    -webkit-animation: input-focus 0.3s ease;
+    animation: input-focus 0.3s ease;
+  }
+  
+  .submit {
+    margin-top: 1.2rem;
+    padding: 2px;
+    margin: 5vh;
+    border-radius: 5px;
+    background-color: $clr-blanco2;
   }
   

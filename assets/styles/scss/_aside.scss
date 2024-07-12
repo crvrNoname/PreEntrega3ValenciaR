@@ -1,14 +1,14 @@
-
+/*ASIDE CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 aside {
-  
-    width: auto;
-    height: 100%;
-    max-height: 50vh;
-    margin: 5px;
-    grid-area: aside;
-  
-    > img {
-      width: 100%;
-      height: auto;
-    }
-  }
+  grid-area: aside;
+  width: auto;
+  height: 100%;
+  max-height: 50vh;
+  margin: 5px;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}

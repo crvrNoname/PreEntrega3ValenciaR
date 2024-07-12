@@ -2,165 +2,331 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="keywords"
-        content="Salon de belleza, Peluqueria, Estilista, Belleza, Cortes de pelo, Peinados, Tintura ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+  content="Andres Valencia Salón de Belleza, Salon de belleza, Peluqueria, Estilista, Belleza, Cortes de pelo, Peinados, Tintura ">
+  <meta name="description"
+      content="Servicios de peluquería, barbería y tratamientos de belleza. Descubre un ambiente exclusivo para realzar tu estilo y personalidad.">
     <title>Andres Valencia SB - Servicios</title>
-     <!-- CSS BOOSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./../styles/css/styles.css">
-   
-
-    <link rel="shortcut icon" href="./../img/logos/icons/avsb.ico" type="image/x-icon">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Andres Valencia Salon De Belleza">
+    <meta property="og:image" content="https://andres-valencia-sb.vercel.app/assets/img/logos/avsb_min.gif">
+<!-- CSS BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- CSS Local -->
+<link rel="stylesheet" href="./../styles/css/styles.css">
+<!--Favicon  -->
+<link rel="shortcut icon" href="./../img/logos/icons/avsb.ico" type="image/x-icon">
 </head>
 
 <body>
     <div class="contenedor">
-        < <header>
-            <!-- <img id="reloj" src="./assets/img/generales/reloj-removebg.png" alt="Reloj hora Santiago de Chile."> -->
-            <!-- <div class="logoContenedor"> -->
-                
-                <img id="logo" src="./../img/logos/avsb.png" alt="Logo Andres Valencia SB"
-                title="Logo Andres Valencia SB">
-                
-                
-            <!-- </div> -->
+        <header>
+            <a href="./../../index.html">
+                    <img id="logo" src="./../img/logos/avsb.png" alt="Logo Andres Valencia SB" title="Logo Andres Valencia SB">            
+                </a>
             <div id="titulo">
                 <h1>Andres Valencia</h1>
                 <h2>Salon de Belleza</h2>
             </div>
-            
-            <!-- <img id="buscador" src="./assets/img/generales/lupa-removebg.png" alt="buscador dentro del sitio web.">
-              -->
-    
-              <div class="search-banner">
+            <div class="search-banner">
                 <div class="search-container">
-                    <img src="./../img/generales/lupa-removebg.png" alt="Buscar" class="search-icon">
+                    <img src="./../img/generales/lupa-removebg.png" alt="Buscador" class="search-icon">
                     <input type="text" class="search-input" placeholder="Buscar...">
                 </div>
             </div>
-            
-        </header>
-     <!-- Barra de Navegacion -->
+            </header>
 
-     <nav class="navbar navbar-expand-md justify-content-center" id="navbar">  
-        <!-- Contenido de la barra de navegación --> 
-              
-            <!-- BARRA BURGUER -->
-             
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Barra de Navegacion -->
+            <nav class="navbar navbar-expand-md justify-content-center" id="navbar">
+                <!-- Contenido de la barra de navegación -->
+                <!-- BARRA BURGUER -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./../../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  href="./../pages/eventos.html">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./../pages/agendar.html">Agendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true" href="#">Servicios</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./../pages/agendar.html">Agendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="#">Servicios</a>
+                        </li>
                     </ul>
                 </div>
-                </nav>
-       </nav>
-        
-   
-       <aside>
-        
-        
+            </nav>
+            </nav>
 
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./../img/baner/alterEgo.png" class="d-block w-100 asideimg" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./../img/baner/wella.png" class="d-block w-100 asideimg" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./../img/baner/pichara.png" class="d-block w-100 asideimg" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <img class="asideimg"  src="./../img/baner/saleOff-removebg.png" alt="Descuento"> 
-    </aside>
-        <main>
-
-           
-
-            <article >
-                <div id="lista-precios">
-                <h3>Lista de precios</h3>
-                <div class="categoria-servicio">
-                    <h4>Corete Mujer</h4>
-                    <ul>
-                        <li>Pelo Corto - $20.000</li>
-                        <li>Pelo Mediano - $25.000</li>
-                        <li>pelo Largo - $30.000</li>
-                    </ul>
+            <aside>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./../img/baner/alterEgo.png" class="d-block w-100 asideimg" alt="Marca Alterego. Productos alta calidad">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./../img/baner/wella.png" class="d-block w-100 asideimg" alt="Marca Wella. Productos alta calidad">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./../img/baner/pichara.png" class="d-block w-100 asideimg" alt="Marca Pichara. Productos alta calidad">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="categoria-servicio">
-                    <h4>Corete Varon</h4>
-                    <ul>
-                        <li>Pelo Corto - $20.000</li>
-                        <li>Pelo Mediano - $25.000</li>
-                        <li>pelo Largo - $30.000</li>
-                    </ul>
-                </div>
-            </div>
-            </article>
+                <img class="asideimg" src="./../img/baner/saleOff-removebg.png" alt="Descuento">
+            </aside>
 
-           
+            <main>
+                <article>
+                    
+                      <div id="lista-precios">
+                        <h3>Lista de precios</h3>
+                      
+                        <div class="categoria-servicio">
+                          <img class="logoLista" src="./../img/logos/icons/avsb.ico" alt="Logo andresvalenciasb">
+                          <h4>Lavado de Cabello</h4>
+                          <dl>
+                            <div class="servicio">
+                              <dt>Lavado de cabello</dt>
+                              <dd>$3.300 a $11.000</dd>
+                            </div>
+                          </dl>
+                        </div>
+                      
+                        <div class="categoria-servicio">
+                          <img class="logoLista" src="./../img/logos/icons/avsb.ico" alt="Logo andresvalenciasb">
+                          <h4>Cortes</h4>
+                          <dl>
+                            <div class="servicio">
+                              <dt>Corte Dama</dt>
+                              <dd>$22.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Corte Flequillo</dt>
+                              <dd>$5.500</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Corte Hombre</dt>
+                              <dd>$15.400</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Corte Barba</dt>
+                              <dd>$5.500</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Corte Niño (1-10 años)</dt>
+                              <dd>$13.200</dd>
+                            </div>
+                          </dl>
+                          
+                        </div>
+                      
+                        <div class="categoria-servicio">
+                          <img class="logoLista" src="./../img/logos/icons/avsb.ico" alt="Logo andresvalenciasb">
+                          <h4>Peinados</h4>
+                          <dl>
+                            <div class="servicio">
+                              <dt>Secado</dt>
+                              <dd>$6.600 a $11.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Peinado</dt>
+                              <dd>$9.900 a $22.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Peinado Tubos</dt>
+                              <dd>$11.000 a $27.500</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Moño Dama</dt>
+                              <dd>$27.500 a $44.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Moño Novia</dt>
+                              <dd>$44.000 a $66.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Prueba de Moño</dt>
+                              <dd>$22.000 a $33.000</dd>
+                            </div>
+                          </dl>
+                        </div>
+                      
+                        <div class="categoria-servicio">
+                          <img class="logoLista" src="./../img/logos/icons/avsb.ico" alt="Logo andresvalenciasb">
+                          <h4>Manos, Pies & Otros</h4>
+                          <dl>
+                            <div class="servicio">
+                              <dt>Manicure</dt>
+                              <dd>$9.900 a $33.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Corte de Uñas</dt>
+                              <dd>$7.700</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Pedicure</dt>
+                              <dd>$13.200 a $19.800</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Maquillaje</dt>
+                              <dd>$22.000 a $33.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Pestañas</dt>
+                              <dd>$22.000 a $44.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Tinte de cejas o Pestañas</dt>
+                              <dd>$7.700</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Depilación Tradicional</dt>
+                              <dd>$2.200 a $22.000</dd>
+                            </div>
+                          </dl>
+                        </div>
+                      
+                        <div class="categoria-servicio">
+                          <img class="logoLista" src="./../img/logos/icons/avsb.ico" alt="Logo andresvalenciasb">
+                          <h4>Masajes</h4>
+                          <dl>
+                            <div class="servicio">
+                              <dt>Masaje Capilar Express</dt>
+                              <dd>$16.500 a $33.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Masaje Tecnología Plex</dt>
+                              <dd>$33.000 a $66.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Aplicación de Olaplex en Químicos</dt>
+                              <dd>$13.200</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Botox Capilar</dt>
+                              <dd>$27.500 a $66.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Plástica de Arguila</dt>
+                              <dd>$25.300 a $66.000</dd>
+                            </div>
+                          </dl>
+                        </div>
+                      
+                        <div class="categoria-servicio">
+                          <img class="logoLista" src="./../img/logos/icons/avsb.ico" alt="Logo andresvalenciasb">
+                          <h4>Tinturas & Trabajos Químicos</h4>
+                          <dl>
+                            <div class="servicio">
+                              <dt>Aplicación Tinturas</dt>
+                              <dd>$16.500 a $27.500</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Tintura</dt>
+                              <dd>$24.200 a $66.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Cintillo</dt>
+                              <dd>$16.500 a $27.500</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Henna</dt>
+                              <dd>$24.200 a $66.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Visos</dt>
+                              <dd>$30.800 a $66.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Mechas 1 a 3</dt>
+                              <dd>$16.500 a $22.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Base Permanente</dt>
+                              <dd>$30.800 a $66.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Alisado Flequillo</dt>
+                              <dd>$22.000 a $33.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Alisado Global</dt>
+                              <dd>$55.000 a $198.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Balayage</dt>
+                              <dd>$44.000 a $132.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>BabyLight</dt>
+                              <dd>$44.000 a $132.000</dd>
+                            </div>
+                            <div class="servicio">
+                              <dt>Baño de Color</dt>
+                              <dd>$16.500 a $66.000</dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </div>
+                      
+                      
+                      
+                </article>
+            </main>
+            
+            <footer>
+                <p>
+                    Síguenos en:
+                    <a href="https://www.facebook.com/andresvalenciasb/?locale=es_LA" target="_blank"><img src="../img/logos/fb.png" alt="Facebook"></a>
 
-        </main>
-
-    
-
-        <footer>
-            <p>
-                Síguenos en:
-                <a href="#" target="_blank"><img src="../img/logos/fb.png" alt="Facebook"></a>
-    
-                <a href="#" target="_blank"><img src="../img/logos/insta.png" alt="Instagram"></a>
-            </p>
-            <p>Teléfono: 123-456-789</p>
-            <p>andresvalenciasb@miempresa.com</p>
-    <hr>
-            <p>&copy; 2024 Andres Valencia SB</p>
-        </footer>
+                    <a href="https://www.instagram.com/sbandresvalencia/?hl=es" target="_blank"><img src="../img/logos/insta.png" alt="Instagram"></a>
+                </p>
+                <p>Teléfono: 123-456-789</p>
+                <p>andresvalenciasb@miempresa.com</p>
+                <hr>
+                <p>&copy; 2024 Andres Valencia SB</p>
+            </footer>
     </div>
-    <a href="https://api.whatsapp.com/send?phone=56988934455&text=HOLA!" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=56988934851&text=HOLA!" target="_blank">
         <img class="logoWhatsapp pulse" src="./../img/logos/whatsapp.png" alt="logo WhatsaPP">
     </a>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
+
